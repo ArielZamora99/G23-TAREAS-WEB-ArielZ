@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora De Ariel Zamora Grupo 23 individual</title>
+        <link rel="stylesheet" href="AZ-styles.css">
+    </head>
+    <body>
+
+        <main class="calculadora">
+
+            <header class="encabezado">
+                <div class="icono">▦</div>
+                <div class="titulo">
+                    <h1>Calculadora De ArielZ G23</h1>
+                    <p>Resuelve tus dudas numéricas</p>
+                </div>
+            </header>
+
+            <section class="contenido">
+
+                <div class="pantalla">
+                    <div id="operacion" class="operacion"></div>
+                    <div id="resultado" class="resultado">0</div>
+                </div>
+
+                <div class="botones">
+
+                    <button onclick="agregarNumero('7')">7</button>
+                    <button onclick="agregarNumero('8')">8</button>
+                    <button onclick="agregarNumero('9')">9</button>
+                    <button class="operador" onclick="agregarOperador('/')">÷</button>
+
+                    <button onclick="agregarNumero('4')">4</button>
+                    <button onclick="agregarNumero('5')">5</button>
+                    <button onclick="agregarNumero('6')">6</button>
+                    <button class="operador" onclick="agregarOperador('*')">×</button>
+
+                    <button onclick="agregarNumero('1')">1</button>
+                    <button onclick="agregarNumero('2')">2</button>
+                    <button onclick="agregarNumero('3')">3</button>
+                    <button class="operador" onclick="agregarOperador('-')">−</button>
+
+                    <button onclick="agregarNumero('0')">0</button>
+                    <button onclick="agregarDecimal()">.</button>
+                    <button class="borrar" onclick="limpiar()">C</button>
+                    <button class="operador" onclick="agregarOperador('+')">+</button>
+
+                    <button class="igual" onclick="calcular()">=</button>
+
+                </div>
+
+            </section>
+
+        </main>
+
+        <script src="AZ-codigo.js"></script>
+    </body>
+</html>

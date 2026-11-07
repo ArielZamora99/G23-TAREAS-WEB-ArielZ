@@ -1,0 +1,157 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f1f8;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.calculadora {
+    width: 100%;
+    max-width: 480px;
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.encabezado {
+    background: #493071;
+    color: white;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icono {
+    font-size: 48px;
+    border-right: 2px solid #b9a6d4;
+    padding-right: 20px;
+}
+
+.titulo h1 {
+    font-size: 27px;
+    margin-bottom: 7px;
+}
+
+.titulo p {
+    font-size: 13px;
+    color: #e4dcef;
+}
+
+.contenido {
+    padding: 25px;
+}
+
+.pantalla {
+    background: #f0edf7;
+    border: 2px solid #d8cfea;
+    border-radius: 13px;
+    padding: 18px;
+    margin-bottom: 20px;
+    min-height: 115px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.operacion {
+    color: #81769b;
+    font-size: 22px;
+    min-height: 28px;
+    word-break: break-all;
+}
+
+.resultado {
+    color: #35234f;
+    font-size: 40px;
+    font-weight: bold;
+    word-break: break-all;
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    height: 65px;
+    border: 1px solid #d8cfea;
+    border-radius: 12px;
+    background: #f5f3fa;
+    color: #302744;
+    font-size: 27px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #e5def2;
+}
+
+.operador {
+    background: #7544b2;
+    color: white;
+    border: none;
+}
+
+.operador:hover {
+    background: #603494;
+}
+
+.borrar {
+    background: #e65e70;
+    color: white;
+    border: none;
+}
+
+.borrar:hover {
+    background: #cf485b;
+}
+
+.igual {
+    grid-column: span 4;
+    background: #493071;
+    color: white;
+    border: none;
+    font-size: 32px;
+}
+
+.igual:hover {
+    background: #362153;
+}
+
+@media (max-width: 400px) {
+    .encabezado {
+        padding: 18px;
+    }
+
+    .titulo h1 {
+        font-size: 22px;
+    }
+
+    .titulo p {
+        font-size: 11px;
+    }
+
+    .contenido {
+        padding: 15px;
+    }
+
+    button {
+        height: 58px;
+    }
+}
